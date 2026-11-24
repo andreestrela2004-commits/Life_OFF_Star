@@ -28,7 +28,7 @@ ol,ul{padding-left:22px}li{margin:5px 0}
 <h1>Como usar a LifeOFFstar</h1>
 <p class="mu">A app tem duas ideias: <b>objetivos</b>, que se repetem e criam hábitos, e <b>lembretes</b>, que são coisas pontuais que não podes esquecer.</p>
 <p>Em qualquer ecrã, o ícone da estrela no canto superior direito abre um menu com <b>Estatísticas</b>, <b>Definições</b> e esta página.</p>
-<nav class="toc" aria-label="Secções"><a href="#instalar">Instalar</a><a href="#inicio">Início</a><a href="#objetivos">Objetivos</a><a href="#compras">Compras</a><a href="#ligados">Objetivos ligados</a><a href="#lembretes">Lembretes</a><a href="#revisao">Revisão semanal</a><a href="#dados">Os teus dados</a><a href="#duvidas">Dúvidas</a></nav>
+<nav class="toc" aria-label="Secções"><a href="#instalar">Instalar</a><a href="#inicio">Início</a><a href="#objetivos">Objetivos</a><a href="#compras">Compras</a><a href="#ligados">Objetivos ligados</a><a href="#lembretes">Lembretes</a><a href="#revisao">Revisão semanal</a><a href="#avisos">Avisos</a><a href="#dados">Os teus dados</a><a href="#duvidas">Dúvidas</a></nav>
 
 <h2 id="instalar">Instalar no telemóvel</h2>
 <ol>
@@ -87,6 +87,22 @@ ol,ul{padding-left:22px}li{margin:5px 0}
 <h2 id="revisao">Revisão semanal</h2>
 <p>No Início, o cartão <b>Revisão da semana</b> fica em destaque ao domingo. Mostra quantos dias de cada hábito cumpriste, os objetivos semanais feitos ou por fazer e os lembretes que ficaram por resolver. Para cada lembrete escolhes <b>Próxima semana</b> ou <b>Largar</b>. Há também um botão para passar todos de uma vez.</p>
 
+<h2 id="avisos">Avisos no telemóvel</h2>
+<p>Os lembretes com data e <b>hora</b> avisam-te através da app gratuita <b>ntfy</b>: um pré-aviso (por defeito 15 minutos antes) e outro à hora.</p>
+<ol>
+<li>Instala a app <b>ntfy</b> na Play Store e permite-lhe enviar notificações.</li>
+<li>Na LifeOFFstar, abre o menu do ícone, <b>Definições</b>, cartão <b>Avisos no telemóvel</b>. Copia o <b>nome do canal</b>.</li>
+<li>Na app ntfy, carrega em <b>＋</b>, cola o nome e subscreve (servidor ntfy.sh).</li>
+<li>Na LifeOFFstar, põe os avisos em <b>Ligados</b> e carrega em <b>Enviar aviso de teste</b>.</li>
+</ol>
+<p>O que convém saber:</p>
+<ul>
+<li>Só são agendados os lembretes dos <b>próximos 3 dias</b>. Abre a LifeOFFstar pelo menos de 3 em 3 dias para ela agendar os seguintes.</li>
+<li>Se riscares, adiares, mudares ou apagares um lembrete, o aviso antigo é cancelado e o novo é agendado, desde que o telemóvel tenha internet nesse momento.</li>
+<li>O texto dos lembretes passa pelo serviço ntfy.sh. O nome do canal é a única proteção: não o partilhes, e usa “Gerar novo nome” se suspeitares que alguém o tem.</li>
+<li>Para o aviso tocar com Não incomodar ativo, nas definições da app ntfy dá ao canal o modo de entrega instantânea e a prioridade alta.</li>
+</ul>
+
 <h2 id="dados">Os teus dados</h2>
 <p>Tudo fica guardado só no browser do aparelho que estás a usar. Não há conta nem sincronização, por isso o que escreves no computador não aparece no telemóvel.</p>
 <p>Em <b>Definições</b> podes <b>exportar</b> uma cópia para um ficheiro e <b>importar</b> noutro aparelho. Convém exportar de vez em quando: se limpares os dados do browser, perdes tudo o que não tenha cópia.</p>
@@ -97,8 +113,8 @@ ol,ul{padding-left:22px}li{margin:5px 0}
 <h3>Atualizei a app e continua igual.</h3>
 <p>Carrega em <code>Ctrl+Shift+R</code> no Chrome para ignorar a versão guardada.</p>
 <h3>Vou receber notificações?</h3>
-<p>A app não envia avisos por si própria. Para teres um aviso, cria o lembrete com data (e hora) e carrega em <b>＋ Calendário</b>: é o calendário do telemóvel que te avisa, mesmo com a app fechada.</p>
-<p>Estão a ser preparadas notificações da própria app. Por agora, em <b>Definições</b>, a secção <b>Notificações (em teste)</b> serve só para testar a ligação ao servidor de avisos.</p>
+<p>Sim, com a app <b>ntfy</b> (ver a secção “Avisos”). Se preferires, o botão <b>＋ Calendário</b> de cada lembrete é uma alternativa.</p>
+
 <div class="note">LifeOFFstar · Take Control of Your Life.</div>
 </main>
 </body></html>
